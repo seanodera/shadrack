@@ -1,8 +1,5 @@
 import React from 'react'
-import { Nav, Container,FormGroup, Navbar, NavbarBrand, NavDropdown, NavLink} from 'react-bootstrap'
-import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse'
-import { AiOutlineSearch } from 'react-icons/ai'
-import NavbarToggle from 'react-bootstrap/esm/NavbarToggle'
+import { Nav, Container,Navbar, NavDropdown, NavLink} from 'react-bootstrap'
 import {LinkContainer} from 'react-router-bootstrap'
 
 const Header = () => {

@@ -2,6 +2,8 @@ import React from 'react'
 import { Row, Col, Button, Container} from 'react-bootstrap'
 import Contact from '../components/Contact';
 import Staff from '../components/Staff';
+import Service from "../components/Service";
+import {BsPersonDash} from "react-icons/bs";
 
 const HomeScreen = () => {
     const primaryColor = '#FF1444' ;
@@ -14,16 +16,22 @@ const HomeScreen = () => {
                 <Col style={{
                    display: 'flex',
                    alignItems: 'center',
-                   height: '50vw',
+                   minHeight: '50vw',
                    width: '40vw',
                    textAlign: 'start'
                 }}>
                <Container className='px-3'>
-               <h5> We Are Investors</h5>
+               <h5 style={{
+                   color: 'white'
+               }}> We Are Investors</h5>
                 <br/>
-                <h3>Shedrack&amp;Co</h3>
+                <h3 style={{
+                    color: 'white'
+                }}>Shedrack&amp;Co</h3>
     
-                <p>We pride ourselves in great work ethic, integrity and provide end-results</p>
+                <p style={{
+                    color: 'white'
+                }}>We pride ourselves in great work ethic, integrity and provide end-results</p>
   
                 <Button variant='light'>Get Started</Button>
                </Container>
@@ -31,8 +39,9 @@ const HomeScreen = () => {
                 </Col>
                 <Col style={{
                     width: '60vw'
-                }}>
-                <img src='/assets/image1.webp'style={{
+                }} xs={false}>
+
+                <img src='/assets/image1.webp' alt='starting' style={{
                     width: '60vw',
                     height: '50vw',
                     objectFit: 'cover'
@@ -46,8 +55,8 @@ const HomeScreen = () => {
             <Row className='mx-0'>
                 <Col style={{display: 'flex',
                    alignItems: 'center',
-                   height: '50vw',
-                   textAlign: 'start'}}>
+                   minHeight: '50vw',
+                   textAlign: 'start'}} sm={'2'} md={'4'}>
                       <Container>
                       <h5 style={{color: `${primaryColor}`}}>Who we are</h5>
                        <h3 style={{color: `${primaryColor}`}}>About Shedrack&amp;Co</h3>
@@ -61,7 +70,7 @@ const HomeScreen = () => {
                     height: '50vw',
                     textAlign: 'start'
                 }}>
-                <img src='/assets/image2.webp'  style={{objectFit: 'contain', height: '37.5vw', width: '50vw', marginRight: '10vw'}}/>
+                <img src='/assets/image2.webp' alt='about' style={{objectFit: 'contain', height: '37.5vw', width: '50vw', marginRight: '9vw'}}/>
                 </Col>
             </Row>
             <br/>
@@ -73,21 +82,38 @@ const HomeScreen = () => {
                 <Col style={{display: 'flex',
                    alignItems: 'center',
                    height: '50vw',
-                   width: '50vw',
+                   minWidth: '50vw',
                    textAlign: 'start'}}>
                         <Container>
                         <h5 style={{color: `${primaryColor}`}}>What we do</h5>
                        <h3 style={{color: `${primaryColor}`}}>Our Services</h3>
-                       
+                            <Row md={'2'} className='gx-3 gy-3'>
+                                <Col >
+                                    <Service
+                                        icon={<BsPersonDash style={{color: '#FF1744'}}/>}
+                                        text={"•Through our research, information, analytics and people, we help clients by-pass opportunity costs as we weigh their risks and returns while putting into consideration the capital they have at their disposal.\n" +
+                                        "\n" +
+                                        "•It is our utmost priority to make sure that our clients make investment decisions that see them benefit as much as possible in the LONG TERM."}
+                                        title={"Financial and Investment Advisory"}/>
+                                </Col>
+                                <Col >
+                                    <Service
+                                        icon={<BsPersonDash style={{color: '#FF1744'}}/>}
+                                        text={"•We help business founders, especially in the start-up phase build products, provide services and create businesses that deliver deliver tremendous value to customers, differentiate them from competitors and make money from themselves in cost-effective ways.\n" +
+                                            "\n" +
+                                            "•9 out of 10 businesses fail and we have taken it upon ourselves to ensure that people approach business with value propositions and business models that establish them among the successes of the business world."}
+                                        title={"Business Strategy and Consultation"}/>
+                                </Col>
+                            </Row>
                         </Container>
 
                 </Col>
                 <Col style={{display: 'flex',
                    alignItems: 'center',
                    height: '50vw',
-                   width: '50vw',
+                   minWidth: '50vw',
                    textAlign: 'start'}}>
-                <img src='/assets/image3.webp' style={{height: '37.5vw', width: '37.5vw', objectFit: 'cover'}}/>
+                <img src='/assets/image3.webp' alt='doing' style={{height: '37.5vw', width: '37.5vw', objectFit: 'cover'}}/>
                 </Col>
             </Row>
         </section>

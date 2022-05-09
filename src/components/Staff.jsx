@@ -1,6 +1,5 @@
 import React from 'react'
-import { Card, Col, Container, Row } from 'react-bootstrap'
-import CardHeader from 'react-bootstrap/esm/CardHeader'
+import { Card, Col, Container } from 'react-bootstrap'
 import { AiOutlineFacebook, AiOutlineInstagram, AiOutlineTwitter } from 'react-icons/ai'
 
 const Staff = ({src, name, title}) => {

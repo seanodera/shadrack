@@ -47,15 +47,17 @@ const Contact = () => {
             <Col style={{
                 display: 'flex',
                 alignItems: 'center',
-                width: '37.5vw'
+                minWidth: '37.5vw'
             }}>
-            <Container className='px-0' style={{height: '37.5vw', width: '37.5vw',objectFit: 'contain'}}>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510564.6498664422!2d36.56720029142611!3d-1.3031933719272915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2s!4v1650911548910!5m2!1sen!2s" width="540" height="540" style={{border: 'none'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <Container className='px-0' style={{height: '37.5vw', width: '37.5vw',
+                objectFit: 'contain', color: '#262626'}}>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510564.6498664422!2d36.56720029142611!3d-1.3031933719272915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2s!4v1650911548910!5m2!1sen!2s"
+                    width="540" height="540" title='maps'
+                    style={{border: 'none'}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </Container>
             </Col>
             <Col  style={{display: 'flex',
                    alignItems: 'center',
-                   
                    textAlign: 'start'}}>
            <Container >
            <Container>
