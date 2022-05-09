@@ -47,6 +47,7 @@ const HomeScreen = () => {
                     objectFit: 'cover'
                 }}/>
                 </Col>
+
             </Row>
         </section>
         <section style={{
