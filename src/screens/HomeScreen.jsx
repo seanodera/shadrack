@@ -88,7 +88,7 @@ const HomeScreen = () => {
                         <Container>
                         <h5 style={{color: `${primaryColor}`}}>What we do</h5>
                        <h3 style={{color: `${primaryColor}`}}>Our Services</h3>
-                            <Row md={'2'} className='gx-3 gy-3'>
+                            <Row md={'1'} className='gx-3 gy-3'>
                                 <Col >
                                     <Service
                                         icon={<BsPersonDash style={{color: '#FF1744'}}/>}

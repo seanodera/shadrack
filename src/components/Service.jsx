@@ -4,7 +4,7 @@ import {Container} from "react-bootstrap";
 const Service = ({icon, title, text}) => {
   return (
     <Container style={{
-        maxHeight: '160px',
+        maxHeight: '20vw',
         overflow: 'hidden'
     }}>
      <h5> {icon}</h5>
