@@ -5,9 +5,11 @@ import {TiWorld} from 'react-icons/ti';
 
 export const primaryColor = '#FF1444';
 
-export const image1 = '/assets/image1.webp';
+export const image1 = '/assets/image1.jpg';
+export const image2 = '/assets/image2.jpg';
+export const image3= '/assets/image3.jpg';
 
-export const whoWeAre = 'We are a marketing and creative agency that works with companies to build bulletproof brands not just through products, but through stories. Often overlooked channels of customer traffic are the digital platforms which we harness to deliver both relevance and results, cost effectively.';
+export const whoWeAre = 'We work with companies to build bulletproof brands not just through products, but through stories. Often overlooked channels of customer traffic are the digital platforms which we harness to deliver both relevance and results, cost effectively.';
 
 export var services = [
     {title: 'Content Production and Distribution.',

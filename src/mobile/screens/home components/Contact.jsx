@@ -1,6 +1,6 @@
 import React from 'react'
 import { primaryColor } from '../../../Contsants'
-import { Button, Col, Container, Form, FormControl, FormGroup, FormLabel, FormText, Row } from 'react-bootstrap';
+import { Button, Container, Form, FormControl, FormGroup, FormLabel, FormText, Row } from 'react-bootstrap';
 import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
 import {GrLocation} from 'react-icons/gr';
 

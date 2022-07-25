@@ -1,6 +1,6 @@
 import React from 'react'
 import { Row, Container, Col} from 'react-bootstrap'
-import { whoWeAre } from '../Contsants';
+import { image2, whoWeAre } from '../Contsants';
 const primaryColor = '#FF1444' ;
 
 const About = () => {
@@ -28,7 +28,7 @@ const About = () => {
                 height: '50vw',
                 textAlign: 'start'
             }}>
-            <img src='/assets/image2.webp' alt='about' style={{objectFit: 'contain', height: '37.5vw', width: '50vw', marginRight: '9vw'}}/>
+            <img src={image2} alt='about' style={{objectFit: 'contain', height: '37.5vw', width: '50vw', marginRight: '9vw'}}/>
             </Col>
         </Row>
         <br/>

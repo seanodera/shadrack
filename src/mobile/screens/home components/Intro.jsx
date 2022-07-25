@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, Container } from 'react-bootstrap'
-import { image1 } from '../../../Contsants'
+import { image1, image3 } from '../../../Contsants'
 
 const Intro = () => {
   return (

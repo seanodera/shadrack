@@ -6,7 +6,7 @@ import Service from "../components/Service";
 import {BsPersonDash} from "react-icons/bs";
 import Team from '../components/Team';
 import About from '../components/About';
-import { services } from '../Contsants';
+import { image1, image3, services } from '../Contsants';
 
 const HomeScreen = () => {
     const primaryColor = '#FF1444' ;
@@ -44,7 +44,7 @@ const HomeScreen = () => {
                     width: '60vw'
                 }} xs={false}>
 
-                <img src='/assets/image1.webp' alt='starting' style={{
+                <img src={image1} alt='starting' style={{
                     width: '60vw',
                     height: '50vw',
                     objectFit: 'cover'
@@ -81,7 +81,7 @@ const HomeScreen = () => {
                    height: '50vw',
                    minWidth: '50vw',
                    textAlign: 'start'}}>
-                <img src='/assets/image3.webp' alt='doing' style={{height: '37.5vw', width: '37.5vw', objectFit: 'cover'}}/>
+                <img src={image3} alt='doing' style={{height: '37.5vw', width: '37.5vw', objectFit: 'cover'}}/>
                 </Col>
             </Row>
         </section>
