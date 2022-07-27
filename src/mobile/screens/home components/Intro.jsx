@@ -28,7 +28,7 @@ const Intro = () => {
 <Container className='px-3 py-3'>
                <h5 style={{
                    color: 'white'
-               }}> We Are Investors</h5>
+               }}> We Are </h5>
                 <br/>
                 <h3 style={{
                     color: 'white'

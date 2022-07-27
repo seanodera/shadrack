@@ -19,3 +19,5 @@ export var services = [
        {title: 'Packaging Design.'          , text: '', icon: <BiPackage style={{color: '#FF1744'}}/>},
        {title: 'Search Engine Optimization.', text: '', icon: <FaSearchLocation style={{color: '#FF1744'}}/>},
 ]
+
+export const email = 'shedrackandco@gmail.com';

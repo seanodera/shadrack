@@ -1,10 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Button, Col, Container, Form, FormControl, FormGroup, FormLabel, FormText, Row } from 'react-bootstrap';
 import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
 import {GrLocation} from 'react-icons/gr';
+import { email , primaryColor} from '../Contsants';
 
 const Contact = () => {
-    const primaryColor = '#FF1444' ;
+    const [name, setname] = useState('Name');
+    const [userEmail, setUserEmail] = useState('Email');
+    const [subject, setSubject] = useState('Subject');
+    const [message, setMessage] = useState('Message');
   return (
     <section style={{
         backgroundImage: `linear-gradient(90deg , white 60%, ${primaryColor} 40%)`
@@ -20,26 +24,26 @@ const Contact = () => {
              <h3 >Contact Us</h3>
              <br/>
            <Form>
-                <FormGroup>
+           <FormGroup>
                     <FormLabel>Name</FormLabel>
-                    <FormControl id='nameForm' placeholder='Name'/>
+                    <FormControl id='nameForm' placeholder='Name' onChange={e => setname(e.target.value)}/>
                 </FormGroup>
                 <FormGroup>
                     <FormLabel>Email</FormLabel>
-                    <FormControl id='emailForm' placeholder='Email'/>
+                    <FormControl id='emailForm' placeholder='Email' onChange={e => setUserEmail(e.target.value)}/>
                     <FormText muted>We'll never share your email with anyone else</FormText>
                 </FormGroup>
                 <FormGroup>
                     <FormLabel>Subject</FormLabel>
-                    <FormControl id='subjectForm' placeholder='Subject'/>
+                    <FormControl id='subjectForm' placeholder='Subject' onChange={e => setSubject(e.target.value)} />
                 </FormGroup>
                 <FormGroup>
                     <FormLabel>Message</FormLabel>
-                    <FormControl as={'textarea'} id='messageForm' placeholder='Message'/>
+                    <FormControl as={'textarea'} id='messageForm' placeholder='Message' onChange={e => setMessage(e.target.value)}/>
                 </FormGroup>
                 <FormGroup>
                     <br/>
-                <Button>Send Message</Button>
+                <Button href={`mailto: ${email}?from= ${userEmail}&subject = ${subject}&body = I am ${name} \n ${message}`}>Send Message</Button>
                 </FormGroup>
             </Form>
            </Container>
@@ -68,9 +72,9 @@ const Contact = () => {
             </Container>
             <Container>
                 <h6 style={{color: 'white'}}><AiOutlineMail color='white'/> Emails</h6>
-                <small>info@yoursite.com</small>
+                <a href={`mailto:${email}`}><small>{email}</small></a>
                 <br/>
-                <small>sales@yoursite.com </small>
+
             </Container>
             <Container>
                 <h6 style={{color: 'white'}}><GrLocation color='white'/> Address</h6>
